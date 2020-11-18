@@ -13,9 +13,14 @@ function loadComments(){
         .attr('data-width', '100%')
         .attr('data-order-by', 'social')
         .attr('data-lazy', true);
+    $fbCommentLoader = $(document.createElement('div')).attr('class', 'gnc-loader')
 
-    // Add
+    // Add Loader
+    $button.before($fbCommentLoader);
+
+    // Add Comments
     $button.before($fbCommentsDiv);
+    setTimeout(function(){ $fbCommentLoader.remove() }, 3000)
     $button.hide();
     FB.XFBML.parse();
 }

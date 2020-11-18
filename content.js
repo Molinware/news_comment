@@ -17,7 +17,7 @@ $(document.body).prepend($fbScript);
 $commentButton = $(document.createElement('button'))
   .attr('class', "gnc-button-comment")
   .attr('onClick', 'loadComments()')
-  .text("Comments");
+  .text("Carregar Comentários");
 
 var parent_links = $("article[class*='MQsxIb xTewfe R7GTQ keNKEd j7vNaf Cc0Z5d EjqUne']");
 for (i = 0; i < parent_links.length; i++) {
@@ -30,6 +30,7 @@ var observer = new MutationObserver(function(mutations){
   mutations.forEach(function(mutation){
     $article = ($(mutation.addedNodes[0]).find("article[class*='MQsxIb xTewfe R7GTQ keNKEd j7vNaf Cc0Z5d EjqUne']"));
     let uniqueIdentifier = $($article).attr("jsdata");
+    $($article).parent().append($(document.createElement('hr')));
     $($article).parent().append($commentButton.clone().attr("data-unique", uniqueIdentifier));
   });
 });

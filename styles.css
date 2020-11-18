@@ -1,5 +1,33 @@
 .gnc-button-comment {
+    color: gray;
+    border: 0;
+    padding: 4px;
+    background-color: transparent;
+    position: relative;
+    z-index: 1;
+}
+
+.gnc-button-comment:hover {
+    color:white;
+    background-color: lightgray;
+    cursor: pointer;
 }
 
 .gnc-image-comment {
 }
+
+.gnc-loader {
+    margin: 4px;
+    border: 2px solid #f3f3f3; /* Light grey */
+    border-top: 2px solid #3498db; /* Blue */
+    border-radius: 50%;
+    margin-left: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
