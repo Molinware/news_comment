@@ -28,7 +28,6 @@ for (i = 0; i < parent_links.length; i++) {
 // Mutation Observer
 var observer = new MutationObserver(function(mutations){
   mutations.forEach(function(mutation){
-    console.log(mutation);
     $article = ($(mutation.addedNodes[0]).find("article[class*='MQsxIb xTewfe R7GTQ keNKEd j7vNaf Cc0Z5d EjqUne']"));
     let uniqueIdentifier = $($article).attr("jsdata");
     $($article).parent().append($commentButton.clone().attr("data-unique", uniqueIdentifier));
