@@ -8,8 +8,7 @@
 }
 
 .gnc-button-comment:hover {
-    color:white;
-    background-color: lightgray;
+    text-decoration: gray underline;
     cursor: pointer;
 }
 

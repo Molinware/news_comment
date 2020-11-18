@@ -1,7 +1,9 @@
 var onHeadersReceivedCspPass = function(details) {
   for (var i = 0; i < details.responseHeaders.length; i++) {
     if (details.responseHeaders[i].name.toLowerCase() === 'content-security-policy') {
-      details.responseHeaders[i].value = '';
+      var headerValueString = details.responseHeaders[i].value;
+      details.responseHeaders[i].value = headerValueString.replace(";",' https://connect.facebook.net ;');
+      console.log(details.responseHeaders[i].value);
     }
   }
 
