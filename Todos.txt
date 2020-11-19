@@ -1,3 +1,4 @@
-- Implement Localization
+- Some News do not show comments.
+- Implement Localization.
 - When comments are show, they are below the image. Set them above.
-- Implement Correct Loading Indicator
+- Implement Correct Loading Indicator.
