@@ -1,5 +1,0 @@
-- Permitir scripts do facebook sem utilizar uma extensão separada
-
-Melhorias:
-- Botão em cima da imagem
-- Estilo do botão
