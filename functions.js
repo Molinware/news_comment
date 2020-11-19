@@ -26,6 +26,12 @@ function loadComments(){
 }
 
 function GNCInit(){
+    // Wait Jquery to Load
+    if (!window.jQuery){
+        setTimeout(GNCInit, 1000);
+        return;
+    }
+
     // Facebook Comments
     try{
         var $commentButton = $(document.createElement('button'))
@@ -73,5 +79,5 @@ function GNCInit(){
     GNCObserver.observe(document.getElementsByTagName("body")[0], { childList: true, subtree: true });
 }
 
-// Wait for JQuery to fully load
-setTimeout(GNCInit, 2000);
+// Call Init
+GNCInit();
