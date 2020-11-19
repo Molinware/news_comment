@@ -1,4 +1,6 @@
-- Some News do not show comments.
+- Show Comments on Fact Check.
+- Show Comments on Tabbed News.
 - Implement Localization.
-- When comments are show, they are below the image. Set them above.
 - Implement Correct Loading Indicator.
+- When comments are show, they are below the image. Set them above.
+- Implement Child Article comments.
