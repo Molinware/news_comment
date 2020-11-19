@@ -10,10 +10,8 @@
   },  
 
   "permissions": [
-    "activeTab", 
     "webRequest", 
     "webRequestBlocking",
-    "browsingData",
     "https://news.google.com/*"],
  
   "content_scripts": [{
