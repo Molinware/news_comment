@@ -1,6 +1,6 @@
-- Show Comments on Fact Check.
-- Show Comments on Tabbed News.
-- Implement Localization.
-- Implement Correct Loading Indicator.
-- When comments are show, they are below the image. Set them above.
-- Implement Child Article comments.
+- Enchancement: Implement Localization.
+- Enchancement: Show Comments on Fact Check.
+- Enchancement: Show Comments on Tabbed News.
+- Enchancement: Implement Correct Loading Indicator.
+- Enchancement: Implement Child Article comments.
+- Bug: When comments are show, they are below the image. Set them above.
